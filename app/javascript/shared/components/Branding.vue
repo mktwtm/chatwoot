@@ -3,7 +3,7 @@ import globalConfigMixin from 'shared/mixins/globalConfigMixin';
 
 const {
   LOGO_THUMBNAIL: logoThumbnail,
-  BRAND_NAME: brandName,
+  BRAND_NAME: brandName = 'WTM International',
   WIDGET_BRAND_URL: widgetBrandURL,
 } = window.globalConfig || {};
 
