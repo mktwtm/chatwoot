@@ -3,7 +3,7 @@ const {
   API_CHANNEL_THUMBNAIL: apiChannelThumbnail,
   APP_VERSION: appVersion,
   AZURE_APP_ID: azureAppId,
-  BRAND_NAME: brandName,
+  BRAND_NAME: brandName = 'WTM International',
   CHATWOOT_INBOX_TOKEN: chatwootInboxToken,
   CREATE_NEW_ACCOUNT_FROM_DASHBOARD: createNewAccountFromDashboard,
   DIRECT_UPLOADS_ENABLED: directUploadsEnabled,
