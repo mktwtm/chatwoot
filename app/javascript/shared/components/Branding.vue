@@ -64,6 +64,6 @@ export default {
         {{ useInstallationName($t('POWERED_BY'), globalConfig.brandName) }}
       </span>
     </a>
-  </div>
-  <div v-else class="p-3" />-->
+  </div>-->
+  <div v-else class="p-3" />
 </template>
