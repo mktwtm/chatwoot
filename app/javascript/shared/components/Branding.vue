@@ -71,6 +71,6 @@ export default {
   <div
     v-if="false"
     class="px-0 py-3 flex justify-center"
-  ></div><div v-else class="p-3"></div>
+  ></div><div v-else class="p-3" style="padding-bottom:40px;"></div>
 </template>
 
