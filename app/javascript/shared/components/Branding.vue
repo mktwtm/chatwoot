@@ -44,8 +44,8 @@ export default {
 };
 </script>
 
-<template>
-  <!--<div
+<!--<template>
+  <div
     v-if="globalConfig.brandName && !disableBranding"
     class="px-0 py-3 flex justify-center"
   >
@@ -64,6 +64,13 @@ export default {
         {{ useInstallationName($t('POWERED_BY'), globalConfig.brandName) }}
       </span>
     </a>
-  </div>-->
+  </div>
   <div v-else class="p-3" />
+</template>-->
+<template>
+  <div
+    v-if="false"
+    class="px-0 py-3 flex justify-center"
+  ></div><div v-else class="p-3"></div>
 </template>
+
