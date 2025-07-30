@@ -51,16 +51,6 @@ export default {
     },
   },
 
-  // >>> ADIÇÃO: iniciar conversa automaticamente ao montar o componente
-  mounted() {
-    const cfg = window?.chatwootSettings?.autoStartConversation;
-    const autoStart = cfg === undefined ? true : !!cfg;
-    if (autoStart) {
-      this.startConversation();
-    }
-  },
-  // <<< FIM DA ADIÇÃO
-
   methods: {
     startConversation() {
       this.$emit('startConversation');
@@ -72,6 +62,9 @@ export default {
         });
       }
     },
+  },  
+  mounted() {
+    this.startConversation();
   },
 };
 </script>
