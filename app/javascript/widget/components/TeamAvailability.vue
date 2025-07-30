@@ -50,6 +50,17 @@ export default {
       return anyAgentOnline;
     },
   },
+
+  // >>> ADIÇÃO: iniciar conversa automaticamente ao montar o componente
+  mounted() {
+    const cfg = window?.chatwootSettings?.autoStartConversation;
+    const autoStart = cfg === undefined ? true : !!cfg;
+    if (autoStart) {
+      this.startConversation();
+    }
+  },
+  // <<< FIM DA ADIÇÃO
+
   methods: {
     startConversation() {
       this.$emit('startConversation');
@@ -71,7 +82,9 @@ export default {
   >
     <div class="flex items-center justify-between gap-2">
       <div class="flex flex-col gap-1">
-        <div class="font-medium text-n-slate-12">
+        <div class="font-medium text-n-slate-12"
+          :style="{ color: textColor }"
+        >
           {{
             isOnline
               ? $t('TEAM_AVAILABILITY.ONLINE')
